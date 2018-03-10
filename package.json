@@ -1,0 +1,24 @@
+{
+  "name": "what-would-you-do-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rossprehn/What-would-you-do-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rossprehn/What-would-you-do-backend/issues"
+  },
+  "homepage": "https://github.com/Rossprehn/What-would-you-do-backend#readme",
+  "dependencies": {
+    "knex": "^0.14.4",
+    "pg": "^7.4.1",
+    "psql": "0.0.1"
+  }
+}
