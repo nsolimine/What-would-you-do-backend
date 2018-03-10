@@ -10,7 +10,7 @@ exports.seed = function(knex, Promise) {
             'You are in an unfortunate situation in which you are forced to consider cannibalism in order to stay alive. Would you rather eat babies or elderly people?',
           answer1: 'Babies',
           answer2: 'Elderly',
-          response1: '6',
+          response1: '16',
           response2: '2'
         },
         {
