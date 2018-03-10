@@ -3,7 +3,7 @@ require('dotenv').load()
 module.exports = {
   development: {
     client: 'pg',
-    connection: 'postgresql://localhost/wwydbackend'
+    connection: 'postgresql:///wwydbackend'
   },
 
   production: {
