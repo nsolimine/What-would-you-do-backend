@@ -1,4 +1,5 @@
 exports.up = function(knex, Promise) {
+  //yo
   return knex.schema.createTable('questions', function(table) {
     table.increments('id').primary()
     table.text('title')
