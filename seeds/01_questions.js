@@ -5,7 +5,7 @@ exports.seed = function(knex, Promise) {
       return knex('questions').insert([
         {
           id: 1,
-          title: 'Cannibal Island',
+          title: 'Cannibal Islands are awesome',
           question:
             'You are in an unfortunate situation in which you are forced to consider cannibalism in order to stay alive. Would you rather eat babies or elderly people?',
           answer1: 'Babies',
