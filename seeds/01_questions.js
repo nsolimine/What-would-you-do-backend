@@ -11,7 +11,7 @@ exports.seed = function(knex, Promise) {
           answer1: 'Babies',
           answer2: 'Elderly',
           response1: '16',
-          response2: '2'
+          response2: '20'
         },
         {
           id: 2,
