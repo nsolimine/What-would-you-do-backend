@@ -35,4 +35,7 @@ exports.seed = function(knex, Promise) {
         }
       ])
     })
+    .then(() => {
+      return knex.raw('ALTER SEQUENCE questions_id_seq RESTART WITH 25;')
+    })
 }
