@@ -18,9 +18,9 @@ module.exports = {
       .returning('*')
       .then(record => record[0])
   },
-  update(questions, id, question) {
+  update(id, questions) {
     return database('questions')
-      .update(question)
+      .update(questions)
       .where('id', id)
       .returning('*')
       .then(record => record[0])

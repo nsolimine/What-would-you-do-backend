@@ -2,7 +2,8 @@ exports.seed = function(knex, Promise) {
   return knex('questions')
     .del()
     .then(function() {
-      return knex('questions').insert([{
+      return knex('questions').insert([
+        {
           id: 1,
           title: 'The Dress Code',
           question:
@@ -11,7 +12,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'No way!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 2,
           title: 'Earth VS the Moon',
           question:
@@ -20,7 +22,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The Moon!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 3,
           title: 'The Cannibals Quandary',
           question:
@@ -29,7 +32,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Elderly Person',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 4,
           title: 'Body VS Mind',
           question:
@@ -38,7 +42,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Body!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 5,
           title: 'The Countdown',
           question:
@@ -47,7 +52,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'No Way!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 6,
           title: 'The Price of Sex Appeal',
           question:
@@ -56,7 +62,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Less than $1,000',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 7,
           title: 'Prison Culture',
           question:
@@ -65,7 +72,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'We made the mistake!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 8,
           title: 'Forever 75',
           question:
@@ -74,7 +82,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Over 150',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 9,
           title: 'Vampire Weekend',
           question:
@@ -83,7 +92,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Thats Crazy!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 10,
           title: 'The Dream VCR',
           question:
@@ -92,7 +102,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'There is no way!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 11,
           title: 'A Life In Film',
           question:
@@ -101,16 +112,18 @@ exports.seed = function(knex, Promise) {
           answer2: 'The Feature Film!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 12,
           title: 'Shaquille in the Shower',
           question:
-            'You come home from an afternoon of shopping, expecting your residence to be empty. However, upon entering your front door, you immediately sense that something is strange: The entire place smells like marijuana and roses. There is a briefcase sitting in the middle of your living room floor, filled with diamonds and Christmas cookies. You can hear the shower running, and -- when you open the door to the bathroom -- you realize that the man using the shower is basketball legend Shaquille O&#8217;Neal. A naked Shaq peers at you from behind the shower curtain and smiles enthusiastically, but says nothing. He then returns to washing himself. When you ask O&#8217;Neal what he is doing in your home, he simply says, "I do not remember." Do you call the police?',
+            'You come home from an afternoon of shopping, expecting your residence to be empty. However, upon entering your front door, you immediately sense that something is strange: The entire place smells like marijuana and roses. There is a briefcase sitting in the middle of your living room floor, filled with diamonds and Christmas cookies. You can hear the shower running, and -- when you open the door to the bathroom -- you realize that the man using the shower is basketball legend Shaquille ONeal. A naked Shaq peers at you from behind the shower curtain and smiles enthusiastically, but says nothing. He then returns to washing himself. When you ask ONeal what he is doing in your home, he simply says, "I do not remember." Do you call the police?',
           answer1: 'He can stay!',
           answer2: 'Call the police!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 13,
           title: 'Lost Virginity Redux',
           question:
@@ -119,7 +132,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Later',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 14,
           title: 'Rudimentary Magician',
           question:
@@ -128,7 +142,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Nope!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 15,
           title: 'The Nude Acquaintance',
           question:
@@ -137,7 +152,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'No!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 16,
           title: 'The Moon Fight',
           question:
@@ -146,7 +162,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Absolutely not!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 17,
           title: 'Artistic Telekinesis',
           question:
@@ -155,7 +172,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'No it would not!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 18,
           title: 'The Industry Standard',
           question:
@@ -164,7 +182,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The Possibly Illiterate!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 19,
           title: 'Collarbones n Chains',
           question:
@@ -173,7 +192,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'Dealbreaker!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 20,
           title: 'Super Gorilla',
           question:
@@ -182,7 +202,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'No, its insane!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 21,
           title: 'The ParaBox',
           question:
@@ -191,7 +212,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The Turtle!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 22,
           title: 'Kick in the Ribs',
           question:
@@ -200,7 +222,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'I wanted to!',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 23,
           title: 'Office Politics',
           question:
@@ -209,7 +232,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The Stealing',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 24,
           title: 'The Joker',
           question:
@@ -218,7 +242,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The man with no past',
           response1: '1',
           response2: '1'
-        }, {
+        },
+        {
           id: 25,
           title: 'Front Page News',
           question:
@@ -227,7 +252,8 @@ exports.seed = function(knex, Promise) {
           answer2: 'The President',
           response1: '1',
           response2: '1'
-      }])
+        }
+      ])
     })
     .then(() => {
       return knex.raw('ALTER SEQUENCE questions_id_seq RESTART WITH 26;')

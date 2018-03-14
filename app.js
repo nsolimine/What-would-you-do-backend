@@ -39,6 +39,15 @@ app.post('/questions', (request, response) => {
     .catch(console.error)
 })
 
+app.post('/questions/:id', (request, response) => {
+  queries
+    .create('questions', request.body)
+    .then(questions => {
+      response.status(201).json({ questions: questions })
+    })
+    .catch(console.error)
+})
+
 app.delete('/questions/:id', (request, response) => {
   queries
     .delete('questions', request.params.id)
