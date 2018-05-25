@@ -1,7 +1,5 @@
 const database = require('./database-connection')
 
-//yo
-
 module.exports = {
   list(questions) {
     return database('questions').select()
