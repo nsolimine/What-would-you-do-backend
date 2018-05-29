@@ -12,8 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.get('/questions', (request, response) => {
   queries.list('questions').then(questions => {
       response.json({ questions })
-    })
-  .catch(console.error)
+    }).catch(console.error)
 });
 
 app.get('/questions/:id', (request, response) => {
@@ -25,21 +24,13 @@ app.get('/questions/:id', (request, response) => {
 });
 
 app.post('/questions', (request, response) => {
-  queries.create('questions', request.body).then(questions => {
+  queries.create(request.body).then(questions => {
       response.status(201).json({ questions: questions })
-    })
-  .catch(console.error)
-});
-
-app.post('/questions/:id', (request, response) => {
-  queries.create('questions', request.body).then(questions => {
-      response.status(201).json({ questions: questions })
-    })
-  .catch(console.error)
+    }).catch(console.error)
 });
 
 app.delete('/questions/:id', (request, response) => {
-  queries.delete('questions', request.params.id).then(() => {
+  queries.delete(request.params.id).then(() => {
       response.sendStatus(204)
     })
   .catch(console.error)
