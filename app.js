@@ -32,15 +32,13 @@ app.post('/questions', (request, response) => {
 app.delete('/questions/:id', (request, response) => {
   queries.delete(request.params.id).then(() => {
       response.sendStatus(204)
-    })
-  .catch(console.error)
+    }).catch(console.error)
 });
 
 app.put('/questions/:id', (request, response) => {
   queries.update(request.params.id, request.body).then(questions => {
       response.json({ questions: questions[0] })
-    })
-  .catch(console.error)
+    }).catch(console.error)
 });
 
 app.use((request, response) => {
