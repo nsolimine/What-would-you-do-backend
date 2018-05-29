@@ -17,10 +17,11 @@ app.get('/questions', (request, response) => {
 });
 
 app.get('/questions/:id', (request, response) => {
-  queries.read('questions', request.params.id).then(questions => {
-      questions ? response.json({ questions }) : response.sendStatus(404)
-    })
-    .catch(console.error)
+  queries.read(request.params.id).then(questions => {
+      questions
+      ? response.json({ questions })
+      : response.sendStatus(404)
+    }).catch(console.error)
 });
 
 app.post('/questions', (request, response) => {
