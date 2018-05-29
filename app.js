@@ -12,7 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 
 app.get('/questions', (request, response) => {
-  queries.list('questions').then(questions => {
+  queries
+  .list('questions').then(questions => {
       response.json({ questions })
     })
   .catch(console.error)
