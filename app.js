@@ -45,7 +45,7 @@ app.delete('/questions/:id', (request, response) => {
 });
 
 app.put('/questions/:id', (request, response) => {
-  queries.update('questions', request.params.id, request.body).then(questions => {
+  queries.update(request.params.id, request.body).then(questions => {
       response.json({ questions: questions[0] })
     })
   .catch(console.error)
