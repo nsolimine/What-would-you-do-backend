@@ -7,6 +7,7 @@ const database = require('./database-connection')
 
 app.use(cors())
 app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.get('/', (request, response) => {
   queries.list('questions').catch(console.error)
