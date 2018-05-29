@@ -4,7 +4,7 @@ module.exports = {
   list(questions) {
     return database('questions').select()
   },
-  read(questions) {
+  read(id) {
     return database('questions')
       .select('*')
       .where('id', id)
@@ -16,7 +16,7 @@ module.exports = {
       .returning('*')
       .then(record => record[0])
   },
-  update(questions, id) {
+  update(id, questions) {
     return database('questions')
       .update(questions)
       .where('id', id)
