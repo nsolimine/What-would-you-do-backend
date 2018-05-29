@@ -4,26 +4,26 @@ module.exports = {
   list(questions) {
     return database('questions').select()
   },
-  read(questions, id) {
+  read(questions) {
     return database('questions')
       .select('*')
       .where('id', id)
       .first()
   },
-  create(questions, item) {
+  create(questions) {
     return database('questions')
       .insert(item)
       .returning('*')
       .then(record => record[0])
   },
-  update(id, questions) {
+  update(questions, id) {
     return database('questions')
       .update(questions)
       .where('id', id)
       .returning('*')
       .then(record => record[0])
   },
-  delete(questions, id) {
+  delete(id) {
     return database('questions')
       .delete()
       .where('id', id)
